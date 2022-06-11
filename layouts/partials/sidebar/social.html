@@ -83,6 +83,11 @@
 		<img class="social-icon" src="/img/font-awesome/orcid.svg">
 	</a>
 	{{ end }}
+	{{ with .Site.Params.social.reddit }}
+	<a href="https://www.reddit.com/user/{{.}}" rel="me" title="Reddit User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/reddit-alien.svg">
+	</a>
+	{{ end }}
 	{{ with .Site.Params.social.email }}
 	<a href="mailto:{{.}}" rel="me" title="Email Address" aria-hidden="true">
 		<img class="social-icon" src="/img/font-awesome/at.svg">
@@ -91,11 +96,6 @@
 	{{ with .Site.Params.social.pgpkey }}
 	<a href="{{.}}" rel="me" title="My PGP Key" aria-hidden="true">
 		<img class="social-icon" src="/img/font-awesome/key.svg">
-	</a>
-	{{ end }}
-	{{ with .Site.Params.social.reddit }}
-	<a href="https://www.reddit.com/user/{{.}}" rel="me" title="Reddit User Account" aria-hidden="true">
-		<img class="social-icon" src="/img/font-awesome/reddit-alien.svg">
 	</a>
 	{{ end }}
 	{{ with .Site.Params.social.rss }}
