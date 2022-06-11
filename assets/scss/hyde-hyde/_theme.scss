@@ -86,3 +86,15 @@
 		color: #8f5536;
 	}
 }
+.theme-base-10 {
+	.sidebar {
+		background-color: $gray-9;
+	}
+}
+
+.theme-base-10-grad {
+	.sidebar {
+		background-color: $gray-9;
+		background-image: linear-gradient(to bottom, $gray-9, darken($gray-9, 14%));
+	}
+}
