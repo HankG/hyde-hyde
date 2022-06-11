@@ -50,11 +50,13 @@ ul.pagination {
     }
     .navigation-title {
       padding-left: 4px;
+      color: $white;
     }
     .navigation-indicator {
       padding-right: 10px;
       font-size: 1.6rem;
       text-align: bottom;
+      color: $white;
     }    
   }
   .navigation-next {
@@ -64,10 +66,12 @@ ul.pagination {
     }
     .navigation-title {
       padding-right: 4px;
+      color: $white;
     }
     .navigation-indicator {
       padding-left: 10px;
       font-size: 1.6rem;
+      color: $white;
     }
   }
 }
