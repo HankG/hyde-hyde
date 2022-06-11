@@ -47,17 +47,26 @@ ul.pagination {
     .fa {
       padding-right: 10px;
     }
-    .navigation-tittle {
+    .navigation-title {
       padding-left: 4px;
     }
+    .navigation-indicator {
+      padding-right: 10px;
+      font-size: 1.6rem;
+      text-align: bottom;
+    }    
   }
   .navigation-next {
     text-align: right;
     .fa {
       padding-left: 10px;
     }
-    .navigation-tittle {
+    .navigation-title {
       padding-right: 4px;
+    }
+    .navigation-indicator {
+      padding-left: 10px;
+      font-size: 1.6rem;
     }
   }
 }
