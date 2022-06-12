@@ -1,95 +1,152 @@
 <section class="social">
 	<!-- Federated Social Media -->
 	{{ with .Site.Params.social.diaspora}}
-	<a href="{{.}}" rel="me" title="Diaspora" aria-hidden="true">
-		<img class="social-icon" src="/img/font-awesome/diaspora.svg">
+	<a href="{{.}}" rel="me" title="Diaspora" target="_blank">
+		<img class="social-icon" src="/img/other-social-media-icons/diaspora.svg">
+	</a>
+	{{ end }}
+	
+	{{ with .Site.Params.social.friendica}}
+	<a href="{{.}}" rel="me" title="Friendica" target="_blank">
+		<img class="social-icon" src="/img/other-social-media-icons/friendica.svg">
+	</a>
+	{{ end }}
+	
+	{{ with .Site.Params.social.funkwhale}}
+	<a href="{{.}}" rel="me" title="Funkwhale" target="_blank">
+		<img class="social-icon" src="/img/other-social-media-icons/funkwhale-inv.svg">
+	</a>
+	{{ end }}
+
+	{{ with .Site.Params.social.gnusocial}}
+	<a href="{{.}}" rel="me" title="GNU Social" target="_blank">
+		<img class="social-icon" src="/img/other-social-media-icons/gnu-social.svg">
+	</a>
+	{{ end }}
+
+	{{ with .Site.Params.social.hubzilla}}
+	<a href="{{.}}" rel="me" title="Hubzilla" target="_blank">
+		<img class="social-icon" src="/img/other-social-media-icons/hubzilla.svg">
 	</a>
 	{{ end }}
 
 	{{ with .Site.Params.social.mastodon}}
-	<a href="{{.}}" rel="me" title="Mastodon" aria-hidden="true">
-		<img class="social-icon" src="/img/font-awesome/mastodon.svg">
+	<a href="{{.}}" rel="me" title="Mastodon" target="_blank">
+		<img class="social-icon" src="/img/other-social-media-icons/mastodon.svg">
+	</a>
+	{{ end }}
+
+	{{ with .Site.Params.social.misskey}}
+	<a href="{{.}}" rel="me" title="Misskey" target="_blank">
+		<img class="social-icon" src="/img/other-social-media-icons/misskey.svg">
+	</a>
+	{{ end }}
+	
+	{{ with .Site.Params.social.peertube}}
+	<a href="{{.}}" rel="me" title="PeerTube" target="_blank">
+		<img class="social-icon" src="/img/other-social-media-icons/peertube.svg">
+	</a>
+	{{ end }}
+
+
+	{{ with .Site.Params.social.pixelfed}}
+	<a href="{{.}}" rel="me" title="Pixelfed" target="_blank">
+		<img class="social-icon" src="/img/other-social-media-icons/pixelfed.svg">
+	</a>
+	{{ end }}
+
+	{{ with .Site.Params.social.pleroma}}
+	<a href="{{.}}" rel="me" title="Pleroma" target="_blank">
+		<img class="social-icon" src="/img/other-social-media-icons/pleroma.svg">
+	</a>
+	{{ end }}
+	
+	{{ with .Site.Params.social.socialhome}}
+	<a href="{{.}}" rel="me" title="SocialHome" target="_blank">
+		<img class="social-icon" src="/img/other-social-media-icons/socialhome.svg">
 	</a>
 	{{ end }}
 
 	
 	<!-- Popular Social Media --> 
 	{{ with .Site.Params.social.facebook }}
-	<a href="https://facebook.com/{{.}}" rel="me" title="Facebook" aria-hidden="true">
+	<a href="https://facebook.com/{{.}}" rel="me" title="Facebook" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/facebook-square.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.instagram }}
-	<a href="https://instagram.com/{{.}}" rel="me" title="Instagram" aria-hidden="true">
+	<a href="https://instagram.com/{{.}}" rel="me" title="Instagram" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/instagram.svg">
 	</a>
 	{{ end }}
 
 	{{ with .Site.Params.social.linkedin }}
-	<a href="https://linkedin.com/in/{{.}}" rel="me" title="LinkedIn" aria-hidden="true">
+	<a href="https://linkedin.com/in/{{.}}" rel="me" title="LinkedIn" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/linkedin.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.reddit }}
-	<a href="https://www.reddit.com/user/{{.}}" rel="me" title="Reddit" aria-hidden="true">
+	<a href="https://www.reddit.com/user/{{.}}" rel="me" title="Reddit" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/reddit-alien.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.telegram }}
-	<a href="https://t.me/{{.}}" rel="me" title="Telegram" aria-hidden="true">
+	<a href="https://t.me/{{.}}" rel="me" title="Telegram" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/telegram.svg">
 	</a>
 	{{ end }}
 
 	{{ with .Site.Params.social.tiktok }}
-	<a href="https://twitter.com/{{.}}" rel="me" title="TikTok" aria-hidden="true">
+	<a href="https://tiktok.com/{{.}}" rel="me" title="TikTok" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/tiktok.svg">
 	</a>
 	{{ end }}
-		
+
+	
 	{{ with .Site.Params.social.twitter }}
-	<a href="https://twitter.com/{{.}}" rel="me" title="GitHub" aria-hidden="true">
+	<a href="https://twitter.com/{{.}}" rel="me" title="Twitter" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/twitter.svg">
 	</a>
 	{{ end }}
+
 	
 	
 	<!-- Other Social Media -->
 	{{ with .Site.Params.social.aboutme }}
-	<a href="https://about.me/{{.}}" rel="me" title="About.me" aria-hidden="true">
+	<a href="https://about.me/{{.}}" rel="me" title="About.me" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/address-card.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.goodreads }}
-	<a href="{{.}}" rel="me" title="goodreads" aria-hidden="true">
+	<a href="{{.}}" rel="me" title="goodreads" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/goodreads.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.microblog }}
-	<a href="https://micro.blog/{{.}}" rel="me" title="Microblog" aria-hidden="true">
+	<a href="https://micro.blog/{{.}}" rel="me" title="Microblog" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/microblog.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.odnoklassniki }}
-	<a href="{{.}}" rel="me" title="Odnoklassniki" aria-hidden="true">
+	<a href="{{.}}" rel="me" title="Odnoklassniki" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/odnoklassniki-square.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.orcid }}
-	<a href="https://orcid.org/{{.}}" rel="me" title="Orcid" aria-hidden="true">
+	<a href="https://orcid.org/{{.}}" rel="me" title="Orcid" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/orcid.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.xing }}
-	<a href="https://www.xing.com/profile/{{.}}" rel="me" title="Xing" aria-hidden="true">
+	<a href="https://www.xing.com/profile/{{.}}" rel="me" title="Xing" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/xing.svg">
 	</a>
 	{{ end }}
@@ -97,13 +154,13 @@
 	
 	<!-- Developer Style Accounts -->
 	{{ with .Site.Params.social.bitbucket }}
-	<a href="https://bitbucket.org/{{.}}" rel="me" title="Bitbucket" aria-hidden="true">
+	<a href="https://bitbucket.org/{{.}}" rel="me" title="Bitbucket" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/bitbucket.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.github }}
-	<a href="https://github.com/{{.}}" rel="me" title="GitHub" aria-hidden="true">
+	<a href="https://github.com/{{.}}" rel="me" title="GitHub" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/github.svg">
 	</a>
 	{{ end }}
@@ -113,13 +170,13 @@
 		{{ $gitlab_domain = . }}
 	{{ end }}
 	{{ with .Site.Params.social.gitlab }}
-	<a href="https://{{ $gitlab_domain }}/{{.}}" rel="me" title="GitLab" aria-hidden="true">
+	<a href="https://{{ $gitlab_domain }}/{{.}}" rel="me" title="GitLab" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/gitlab.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.stackoverflow }}
-	<a href="https://stackoverflow.com/users/{{.}}" rel="me" title="Stack Overflow" aria-hidden="true">
+	<a href="https://stackoverflow.com/users/{{.}}" rel="me" title="Stack Overflow" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/stack-overflow.svg">
 	</a>
 	{{ end }}
@@ -127,91 +184,105 @@
 	<!-- Personal Production/Data/Research Sites -->
 	
 	{{ with .Site.Params.social.bandcamp}}
-	<a href="{{.}}" rel="me" title="Bandcamp" aria-hidden="true">
+	<a href="{{.}}" rel="me" title="Bandcamp" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/bandcamp.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.blogspot}}
-	<a href="https://{{.}}.blogspot.com" rel="me" title="BLogspot" aria-hidden="true">
+	<a href="https://{{.}}.blogspot.com" rel="me" title="Blogspot" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/blogger.svg">
 	</a>
 	{{ end }}
 
 	{{ with .Site.Params.social.behance}}
-	<a href="https://www.behance.net/{{.}}" rel="me" title="Behance" aria-hidden="true">
+	<a href="https://www.behance.net/{{.}}" rel="me" title="Behance" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/behance.svg">
 	</a>
 	{{ end }}
 
 	{{ with .Site.Params.social.dailymotion}}
-	<a href="https://www.dailymotion.com/{{.}}" rel="me" title="Daily Motion" aria-hidden="true">
+	<a href="https://www.dailymotion.com/{{.}}" rel="me" title="Daily Motion" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/dailymotion.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.devto}}
-	<a href="https://dev.to/{{.}}" rel="me" title="Dev.To" aria-hidden="true">
+	<a href="https://dev.to/{{.}}" rel="me" title="Dev.To" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/dev.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.deviantart}}
-	<a href="https://www.deviantart.com/{{.}}" rel="me" title="DeviantArt" aria-hidden="true">
+	<a href="https://www.deviantart.com/{{.}}" rel="me" title="DeviantArt" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/deviantart.svg">
 	</a>
 	{{ end }}
 
 	{{ with .Site.Params.social.etsy}}
-	<a href="https://www.etsy.com/shop/{{.}}" rel="me" title="Etsy" aria-hidden="true">
+	<a href="https://www.etsy.com/shop/{{.}}" rel="me" title="Etsy" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/etsy.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.flickr}}
-	<a href="{{.}}" rel="me" title="Flickr" aria-hidden="true">
+	<a href="{{.}}" rel="me" title="Flickr" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/flickr.svg">
 	</a>
 	{{ end }}
 
 	{{ with .Site.Params.social.googlescholar}}
-	<a href="https://scholar.google.com/citations?user={{.}}" rel="me" title="Google Scholar" aria-hidden="true">
+	<a href="https://scholar.google.com/citations?user={{.}}" rel="me" title="Google Scholar" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/graduation-cap.svg">
 	</a>
 	{{ end }}
 
 	{{ with .Site.Params.social.kaggle}}
-	<a href="https://www.kaggle.com/{{.}}" rel="me" title="Kaggle" aria-hidden="true">
+	<a href="https://www.kaggle.com/{{.}}" rel="me" title="Kaggle" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/kaggle.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.medium}}
-	<a href="https://medium.com/@{{.}}" rel="me" title="Medium" aria-hidden="true">
+	<a href="https://medium.com/@{{.}}" rel="me" title="Medium" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/medium.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.pinterest}}
-	<a href="{.}}" rel="me" title="Pinterest" aria-hidden="true">
+	<a href="{{.}}" rel="me" title="Pinterest" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/pinterest-square.svg">
 	</a>
 	{{ end }}
 	
+	
 	{{ with .Site.Params.social.researchgate}}
-	<a href="https://www.researchgate.net/profile/{{.}}" rel="me" title="ResearchGate" aria-hidden="true">
+	<a href="https://www.researchgate.net/profile/{{.}}" rel="me" title="ResearchGate" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/researchgate.svg">
 	</a>
 	{{ end }}
 	
+	{{ with .Site.Params.social.tumblr }}
+	<a href="{{.}}" rel="me" title="Tumblr" target="_blank">
+		<img class="social-icon" src="/img/font-awesome/tumblr-square.svg">
+	</a>
+	{{ end }}
+	
+			
+	{{ with .Site.Params.social.twitch }}
+	<a href="{{.}}" rel="me" title="Twitch" target="_blank">
+		<img class="social-icon" src="/img/font-awesome/twitch.svg">
+	</a>
+	{{ end }}
+	
 	{{ with .Site.Params.social.vimeo}}
-	<a href="https://vimeo.com/{{.}}" rel="me" title="Vimeo" aria-hidden="true">
+	<a href="https://vimeo.com/{{.}}" rel="me" title="Vimeo" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/vimeo.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.youtube}}
-	<a href="{{.}}" rel="me" title="YouTube" aria-hidden="true">
+	<a href="{{.}}" rel="me" title="YouTube" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/youtube-square.svg">
 	</a>
 	{{ end }}
@@ -220,13 +291,13 @@
 
 
 	{{ with .Site.Params.social.kickstarter }}
-	<a href="{{.}}" rel="me" title="Kickstarter" aria-hidden="true">
+	<a href="{{.}}" rel="me" title="Kickstarter" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/kickstarter.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.patreon }}
-	<a href="{{.}}" rel="me" title="Patreon" aria-hidden="true">
+	<a href="{{.}}" rel="me" title="Patreon" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/patreon.svg">
 	</a>
 	{{ end }}
@@ -234,26 +305,26 @@
 	<!-- Contact and Site RSS -->
 
 	{{ with .Site.Params.social.keybase }}
-	<a href="https://keybase.io/{{.}}" rel="me" title="Keybase" aria-hidden="true">
+	<a href="https://keybase.io/{{.}}" rel="me" title="Keybase" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/keybase.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.pgpkey }}
-	<a href="{{.}}" rel="me" title="My PGP Key" aria-hidden="true">
+	<a href="{{.}}" rel="me" title="My PGP Key" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/key.svg">
 	</a>
 	{{ end }}
 	
 	{{ with .Site.Params.social.email }}
-	<a href="mailto:{{.}}" rel="me" title="Email Address" aria-hidden="true">
+	<a href="mailto:{{.}}" rel="me" title="Email Address" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/at.svg">
 	</a>
 	{{ end }}
 
 	
 	{{ with .Site.Params.social.rss }}
-	<a href="{{.}}" rel="me" title="RSS Link" aria-hidden="true">
+	<a href="{{.}}" rel="me" title="RSS Link" target="_blank">
 		<img class="social-icon" src="/img/font-awesome/rss.svg">
 	</a>
 	{{ end }}

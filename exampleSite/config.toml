@@ -21,6 +21,10 @@ theme = "hyde-hyde"
     title = "Title"
     # description = "..."
     authorimage = "/img/hugo.png"
+    
+    # Uncomment for default OpenGraph images
+    # Add similar field to post to override w/ post specific ones
+    # images = ["/img/hugo.png"]
     dateformat = "Jan 2, 2006"
     # themeColor = "theme-base-08"
 
@@ -47,6 +51,61 @@ theme = "hyde-hyde"
     # Table of contents
     #toc = none, "hugo", or "tocbot"
 
+## Social Accounts
+[params.social]
+    # aboutme = "<about.me_username>"
+    # bandcamp = "<bandcamp_url>"
+    # behance = "<behance_username>"
+    # bitbucket = "<bitbucket_username>"
+    # blogspot = "<blogspot_site_name>"
+    # dailymotion = "<dailymotion_username>"
+    # devto = "<devto_username>"
+    # deviantart = "<deviantart_username>"
+    # diaspora = "<diaspora_url>"
+    email = "your-email@example.com"
+    # etsy = "<shop_name>"
+    # facebook = "<facebook_username>"
+    # flickr = "<flickr_url>"
+    # funkwhale = "<funkwhale.url>"
+    # friendica = "<friendica.url>"
+    github = "<github_username>"
+    gitlab = "<gitlab_username>"
+    # custom_gitlab_domain = "gitlab.example.com"
+    # gnusocial = "<gnusocial_url>"
+    # goodreads = "<goodreads_url>"
+    # googlescholar = "<google_scholar_user_id_code>"
+    # hubzilla = "<hubzilla_url>"
+    # instagram = "<instagram_username>"
+    # kaggle = "<kaggle_username>"
+    # keybase = "<keybase_username>"
+    # kickstarter = "<kickstarter_url>"
+    linkedin = "<linkedin_username>"
+    # mastodon = "<mastodon_url>"
+    # medium = "<medium_username>"
+    # microblog = "<microblog_username>"
+    # misskey = "<misskey_url>"
+    # odnoklassniki = "<odnoklassniki_url>"
+    # orcid = "<xxxx-xxxx-xxxx-xxxx>"
+    # patreon = "<patreon_url>"
+    # peertube = "<peertube_url>"
+    # pixelfed = "<pixelfed_url>"
+    # pleroma = "<pleroma_url>"
+    # pgpkey = "<path-to-your-key-in-/static>"
+    # pinterest = "<pinterest_url>"
+    # reddit = "<reddit_username>"
+    # researchgate = "<researchgate_username>"
+    # socialhome = "<socialhome_url>"
+    # telegram = "<utelegram_sername>"
+    # tiktok = "<tiktok_username>"
+    # tumblr = "<tumblr_url>"
+    twitch = "<twitch_url>"
+    twitter = "<twitter_username>"
+    # stackoverflow = "<stackoverflow_username>"
+    # xing = "<xing_username>"
+    # youtube = "<youtube_url>"
+    
+    rss = "index.xml" # Default for the siteChange if want to point to another RSS location
+    gravatar = "your-email@example.com"
 
 ### Markup
 #### Chroma Style options gallery: https://xyproto.github.io/splash/docs/
@@ -65,31 +124,6 @@ theme = "hyde-hyde"
     style = 'tango'
     tabWidth = 4
 
-
-## Social Accounts
-[params.social]
-    # aboutme = "<username>"
-    # bitbucket = "<username>"
-    # email = "your-email@example.com"
-    # facebook = "<username>"
-    github = "<username>"
-    gitlab = "<username>"
-    # custom_gitlab_domain = "gitlab.example.com"
-    # googlescholar = "<user_id_code>"
-    instagram = "<username>"
-    # keybase = "<username>"
-    # linkedin = "<username>"
-    # medium = "<username>"
-    # orcid = "<xxxx-xxxx-xxxx-xxxx>"
-    # pgpkey = "<path-to-your-key-in-/static>"
-    # reddit = "<username>"
-    rss = "<url>"
-    # telegram = "<username>"
-    twitter = "<username>"
-    # microblog = "<username>"
-    # stackoverflow = "<username>"
-    # xing = "<username>"
-    # gravatar = "your-email@example.com"
 
 ## Main Menu
 [[menu.main]]
