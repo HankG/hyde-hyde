@@ -6,7 +6,7 @@ This is a slightly tweaked fork of the Hyde-hyde theme by [Alex Tran ](https://g
 The major tweaks are to make it so that it is pulling from local files as much as possible rather
 than CDNs, reduce the download size by not requiring pulling in all of Font Awesome for the 
 handful of icons used, change some of the available themes and presentation for my personal tastes,
-and to support more social media sites (eventually). A list of changes to date are:
+and to support more social media sites. A list of changes to date are:
 
  * Replace truncation text from  ... ➦ to (More...)
  * Converted highlight.js to pull from local files
@@ -17,6 +17,7 @@ and to support more social media sites (eventually). A list of changes to date a
  * Added a sidebar only theme that uses a dark gray gradation color
  * Softened the look of the previous/next buttons on post single page view
  * Added some more documentation to the exampleSite's config.toml 
+ * Added lots more social media site options for the bar
 
 The text below this is from the original project and I will attempt to maintain it updated as such...
 
