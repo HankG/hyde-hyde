@@ -4,6 +4,14 @@
   font-weight: $meta-font-weight;
 }
 
+.post__meta_icon {
+  border-radius: 0px;
+  filter: invert(0.55);
+  display: inline;
+  margin: 0;
+  width: 0.85em;
+}
+
 .post__category {
   font-weight: bold;
 }

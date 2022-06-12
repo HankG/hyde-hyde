@@ -1,1 +1,3 @@
-<script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
+{{ with .Site.Params.includeFontAwesome }}
+<script defer src="/js/libs/font-awesome/all.min.js"></script>
+{{ end }}

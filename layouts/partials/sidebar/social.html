@@ -1,66 +1,106 @@
 <section class="social">
 	{{ with .Site.Params.social.twitter }}
-	<a href="https://twitter.com/{{.}}" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	<a href="https://twitter.com/{{.}}" rel="me" title="GitHub User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/twitter.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.microblog }}
-	<a href="https://micro.blog/{{.}}" rel="me"><i class="fab fa-microblog fa-lg" aria-hidden="true"></i></a>
+	<a href="https://micro.blog/{{.}}" rel="me" title="Microblog User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/microblog.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.facebook }}
-	<a href="https://facebook.com/{{.}}" rel="me"><i class="fab fa-facebook-f"></i></a>
+	<a href="https://facebook.com/{{.}}" rel="me" title="Facebook User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/facebook-square.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.github }}
-	<a href="https://github.com/{{.}}" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	<a href="https://github.com/{{.}}" rel="me" title="GitHub User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/github.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.bitbucket }}
-	<a href="https://bitbucket.org/{{.}}" rel="me"><i class="fab fa-bitbucket fa-lg" aria-hidden="true"></i></a>
+	<a href="https://bitbucket.org/{{.}}" rel="me" title="Bitbucket User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/bitbucket.svg">
+	</a>
 	{{ end }}
 	{{ $gitlab_domain := "gitlab.com" }}
 	{{ with .Site.Params.social.custom_gitlab_domain }}
 		{{ $gitlab_domain = . }}
 	{{ end }}
 	{{ with .Site.Params.social.gitlab }}
-	<a href="https://{{ $gitlab_domain }}/{{.}}" rel="me"><i class="fab fa-gitlab fa-lg" aria-hidden="true"></i></a>
+	<a href="https://{{ $gitlab_domain }}/{{.}}" rel="me" title="GitLab User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/gitlab.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.instagram }}
-	<a href="https://instagram.com/{{.}}" rel="me"><i class="fab fa-instagram fa-lg" aria-hidden="true"></i></a>
+	<a href="https://instagram.com/{{.}}" rel="me" title="Instagram User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/instagram.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.linkedin }}
-	<a href="https://linkedin.com/in/{{.}}" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	<a href="https://linkedin.com/in/{{.}}" rel="me" title="LinkedIn User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/linkedin.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.googlescholar}}
-	<a href="https://scholar.google.com/citations?user={{.}}" rel="me"><i class="fas fa-graduation-cap fa-lg" aria-hidden="true"></i></a>
+	<a href="https://scholar.google.com/citations?user={{.}}" rel="me" title="Google Scholar User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/graduation-cap.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.stackoverflow }}
-	<a href="https://stackoverflow.com/users/{{.}}" rel="me"><i class="fab fa-stack-overflow fa-lg" aria-hidden="true"></i></a>
+	<a href="https://stackoverflow.com/users/{{.}}" rel="me" title="Stack Overflow User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/stack-overflow.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.medium}}
-	<a href="https://medium.com/@{{.}}" rel="me"><i class="fab fa-medium fa-lg" aria-hidden="true"></i></a>
+	<a href="https://medium.com/@{{.}}" rel="me" title="Medium User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/medium.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.xing }}
-	<a href="https://www.xing.com/profile/{{.}}" rel="me"><i class="fab fa-xing fa-lg" aria-hidden="true"></i></a>
+	<a href="https://www.xing.com/profile/{{.}}" rel="me" title="Xing User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/xing.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.keybase }}
-	<a href="https://keybase.io/{{.}}" rel="me"><i class="fab fa-keybase fa-lg" aria-hidden="true"></i></a>
+	<a href="https://keybase.io/{{.}}" rel="me" title=" User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/keybase.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.telegram }}
-	<a href="https://t.me/{{.}}" rel="me"><i class="fab fa-telegram fa-lg" aria-hidden="true"></i></a>
+	<a href="https://t.me/{{.}}" rel="me" title="Telegram User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/telegram.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.aboutme }}
-	&nbsp;<a href="https://about.me/{{.}}"><i class="fas fa-address-card fa-lg" aria-hidden="true"></i></a>
+	<a href="https://about.me/{{.}}" rel="me" title="About.me User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/address-card.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.orcid }}
-	<a href="https://orcid.org/{{.}}" rel="me"><i class="fab fa-orcid fa-lg" aria-hidden="true"></i></a>
-	{{end}}
-	{{ with .Site.Params.social.email }}
-	<a href="mailto:{{.}}" rel="me"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
-	{{ end }}
-	{{ with .Site.Params.social.pgpkey }}
-	<a href="{{.}}" rel="pgpkey"><i class="fa fa-key fa-lg" aria-hidden="true"></i></a>
+	<a href="https://orcid.org/{{.}}" rel="me" title="Orcid User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/orcid.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.reddit }}
-	<a href="https://www.reddit.com/user/{{.}}" rel="me"><i class="fab fa-reddit-alien fa-lg" aria-hidden="true"></i></a>
+	<a href="https://www.reddit.com/user/{{.}}" rel="me" title="Reddit User Account" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/reddit-alien.svg">
+	</a>
+	{{ end }}
+	{{ with .Site.Params.social.email }}
+	<a href="mailto:{{.}}" rel="me" title="Email Address" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/at.svg">
+	</a>
+	{{ end }}
+	{{ with .Site.Params.social.pgpkey }}
+	<a href="{{.}}" rel="me" title="My PGP Key" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/key.svg">
+	</a>
 	{{ end }}
 	{{ with .Site.Params.social.rss }}
-	<a href="{{.}}" rel="me"><i class="fas fa-rss fa-lg" aria-hidden="true"></i></a>
+	<a href="{{.}}" rel="me" title="RSS Link" aria-hidden="true">
+		<img class="social-icon" src="/img/font-awesome/rss.svg">
+	</a>
 	{{ end }}
 </section>

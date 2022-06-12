@@ -15,12 +15,14 @@ theme = "hyde-hyde"
 #paginate = 5
 
 ## Site Settings
+### Main Parameters
 [params]
     author = "Author"
     title = "Title"
     # description = "..."
     authorimage = "/img/hugo.png"
     dateformat = "Jan 2, 2006"
+    # themeColor = "theme-base-08"
 
     # sidebar, copyright & license
     #logoimage = "/img/hugo.png"
@@ -29,10 +31,12 @@ theme = "hyde-hyde"
     license = "CC BY-SA 4.0"
     licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
     showBuiltWith = true
+    # includeFontAwesome = true
 
-    # https://highlightjs.org
-    highlightjs = true
-    highlightjsstyle = "github"
+    # Go to HighlightJS site for styles and language options: https://highlightjs.org
+    # highlightjs = true
+    # highlightjsstyle = "base16/zenburn"
+    # highlightjslanguages = ["bash", "java"]
     
     # please choose either GraphComment or Disqus or Utterances
     #GraphCommentId = "..."
@@ -43,21 +47,49 @@ theme = "hyde-hyde"
     # Table of contents
     #toc = none, "hugo", or "tocbot"
 
+
+### Markup
+#### Chroma Style options gallery: https://xyproto.github.io/splash/docs/
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ''
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = false
+    noClasses = true
+    noHl = false
+    style = 'tango'
+    tabWidth = 4
+
+
 ## Social Accounts
 [params.social]
+    # aboutme = "<username>"
+    # bitbucket = "<username>"
+    # email = "your-email@example.com"
+    # facebook = "<username>"
     github = "<username>"
+    gitlab = "<username>"
+    # custom_gitlab_domain = "gitlab.example.com"
+    # googlescholar = "<user_id_code>"
     instagram = "<username>"
-    xing = "<username>"
-    linkedin = "<username>"
-    twitter = "<username>"
-    facebook = "<username>"
-    microblog = "<username>"
-    stackoverflow = "<username>"
-    telegram = "<username>"
+    # keybase = "<username>"
+    # linkedin = "<username>"
+    # medium = "<username>"
     # orcid = "<xxxx-xxxx-xxxx-xxxx>"
-    email = "your-email@example.com"
-    # gravatar = "your-email@example.com"
     # pgpkey = "<path-to-your-key-in-/static>"
+    # reddit = "<username>"
+    rss = "<url>"
+    # telegram = "<username>"
+    twitter = "<username>"
+    # microblog = "<username>"
+    # stackoverflow = "<username>"
+    # xing = "<username>"
+    # gravatar = "your-email@example.com"
 
 ## Main Menu
 [[menu.main]]

@@ -86,3 +86,15 @@
 		color: #8f5536;
 	}
 }
+.sidebar-theme-01 {
+	.sidebar {
+		background-color: #202020;
+	}
+}
+
+.sidebar-theme-01-grad {
+	.sidebar {
+		background-color: #202020;
+		background-image: linear-gradient(to bottom, $gray-9, darken($gray-9, 14%));
+	}
+}

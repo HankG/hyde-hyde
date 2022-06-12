@@ -3,14 +3,14 @@
 <div class="navigation navigation-single">
     {{ with .PrevInSection }}
     <a href="{{ .RelPermalink }}" class="navigation-prev">
-      <i aria-hidden="true" class="fa fa-chevron-left"></i>
-      <span class="navigation-tittle">{{ .Title }}</span>
+      <span class="navigation-indicator">&lsaquo;</span>
+      <span class="navigation-title">{{ .Title }}</span>
     </a>
     {{ end }}
     {{ with .NextInSection }}
     <a href="{{ .RelPermalink }}" class="navigation-next">
-      <span class="navigation-tittle">{{ .Title }}</span>
-      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+      <span class="navigation-title">{{ .Title }}</span>
+      <span class="navigation-indicator">&rsaquo;</span>
     </a>
     {{ end }}
 </div>

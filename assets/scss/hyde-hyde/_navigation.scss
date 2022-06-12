@@ -24,13 +24,14 @@ ul.pagination {
     align-items: center;
     justify-content: center;
     padding: 15px;
-    color: $navigation-color;
-    border: 2px solid $navigation-color;
+    color: $white;
+    background-color: $navigation-color;
+    border-radius: 10px;
     line-height: 1.25;
     text-transform: uppercase;
     &:hover {
       padding: 14px;
-      border-width: 3px;
+      background-color: lighten($navigation-color,10%);
     }
     &:nth-child(2) {
       margin-top: 10px;
@@ -47,17 +48,30 @@ ul.pagination {
     .fa {
       padding-right: 10px;
     }
-    .navigation-tittle {
+    .navigation-title {
       padding-left: 4px;
+      color: $white;
     }
+    .navigation-indicator {
+      padding-right: 10px;
+      font-size: 1.6rem;
+      text-align: bottom;
+      color: $white;
+    }    
   }
   .navigation-next {
     text-align: right;
     .fa {
       padding-left: 10px;
     }
-    .navigation-tittle {
+    .navigation-title {
       padding-right: 4px;
+      color: $white;
+    }
+    .navigation-indicator {
+      padding-left: 10px;
+      font-size: 1.6rem;
+      color: $white;
     }
   }
 }

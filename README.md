@@ -1,4 +1,24 @@
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/htr3n/hyde-hyde/blob/master/LICENSE.md) ![GitHub release](https://img.shields.io/github/release/htr3n/hyde-hyde.svg) ![GitHub stars](https://img.shields.io/github/stars/htr3n/hyde-hyde.svg) ![GitHub forks](https://img.shields.io/github/forks/htr3n/hyde-hyde.svg) ![GitHub issues](https://img.shields.io/github/issues/htr3n/hyde-hyde.svg) ![GitHub issues closed](https://img.shields.io/github/issues-closed/htr3n/hyde-hyde.svg)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)](https://github.com/htr3n/hyde-hyde/blob/master/LICENSE.md) ![GitHub release](https://img.shields.io/github/release/hankg/hyde-hyde.svg) ![GitHub stars](https://img.shields.io/github/stars/hankg/hyde-hyde.svg) ![GitHub forks](https://img.shields.io/github/forks/hankg/hyde-hyde.svg) ![GitHub issues](https://img.shields.io/github/issues/hankg/hyde-hyde.svg) ![GitHub issues closed](https://img.shields.io/github/issues-closed/hankg/hyde-hyde.svg)
+
+# HankG's Hyde-hyde
+
+This is a slightly tweaked fork of the Hyde-hyde theme by [Alex Tran ](https://github.com/htr3n). 
+The major tweaks are to make it so that it is pulling from local files as much as possible rather
+than CDNs, reduce the download size by not requiring pulling in all of Font Awesome for the 
+handful of icons used, change some of the available themes and presentation for my personal tastes,
+and to support more social media sites (eventually). A list of changes to date are:
+
+ * Replace truncation text from  ... ➦ to (More...)
+ * Converted highlight.js to pull from local files
+ * Converted Font Awesome to pull from local files
+ * Converted specifically used icons (social media, post meta, etc.) to use local SVGs not Font Awesome
+ * Made Font Awesome optionally available with params.includeFontAwesome
+ * Added a sidebar only theme that uses a dark gray color
+ * Added a sidebar only theme that uses a dark gray gradation color
+ * Softened the look of the previous/next buttons on post single page view
+ * Added some more documentation to the exampleSite's config.toml 
+
+The text below this is from the original project and I will attempt to maintain it updated as such...
 
 # Hyde-hyde
 
