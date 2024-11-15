@@ -1,5 +1,5 @@
 {{ $include_toc := .Params.include_toc}}
-{{ if .Site.GoogleAnalytics }}
+{{ if .Site.Config.Services.GoogleAnalytics.ID }}
   <!-- Google Analytics -->
   {{ template "_internal/google_analytics.html" . }}
 {{ end }}
